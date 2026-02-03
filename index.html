@@ -34,10 +34,9 @@
         <div class="hidden md:flex space-x-10 font-medium text-sm uppercase tracking-widest">
             <a href="#about" class="hover:text-lilac transition">About</a>
             <a href="#services" class="hover:text-lilac transition">Services</a>
-            <a href="https://wealthcarewithannemarie.podia.com/welcome" target="_blank" class="hover:text-lilac transition">Courses</a>
         </div>
         
-        <a href="https://calendly.com/app/scheduling/meeting_types/user/me#" target="_blank" class="bg-lilac text-white px-7 py-2.5 rounded-full hover:shadow-lg transition-all text-sm font-semibold">Book Free Consultation</a>
+        <a href="https://calendly.com/wealthcarewithannemarie/30min" target="_blank" class="bg-lilac text-white px-7 py-2.5 rounded-full hover:shadow-lg transition-all text-sm font-semibold">Book Free Consultation</a>
     </nav>
 
     <header class="relative py-16 lg:py-24">
@@ -50,8 +49,8 @@
                     Plan for retirement, protect your income, and create generational wealth with personalized strategies.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
-                    <a href="https://calendly.com/app/scheduling/meeting_types/user/me#" target="_blank" class="bg-lilac text-white px-10 py-4 rounded-xl font-semibold shadow-xl hover:opacity-90 transition-all text-center">Book a Free Consultation</a>
-                    <a href="https://wealthcarewithannemarie.podia.com/welcome" target="_blank" class="border border-lilac text-lilac px-10 py-4 rounded-xl font-semibold hover:bg-lilac hover:text-white transition-all text-center">Start Free Education</a>
+                    <a href="https://calendly.com/wealthcarewithannemarie/30min" target="_blank" class="bg-lilac text-white px-10 py-4 rounded-xl font-semibold shadow-xl hover:opacity-90 transition-all text-center">Book a Free Consultation</a>
+                    <a href="https://wealthcarewithannemarie.podia.com" target="_blank" class="border border-lilac text-lilac px-10 py-4 rounded-xl font-semibold hover:bg-lilac hover:text-white transition-all text-center">Learn More</a>
                 </div>
             </div>
             <div class="lg:w-1/2 mt-16 lg:mt-0 flex justify-center">
@@ -62,7 +61,7 @@
         </div>
     </header>
 
-    <section id="about" class="py-24 bg-lilac-light px-6">
+    <section id="#about" class="py-24 bg-lilac-light px-6">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
             <div class="md:w-1/2">
                 <h2 class="text-4xl mb-6">From <span class="text-lilac italic">Caregiving</span> to Wealth Building.</h2>
@@ -86,7 +85,7 @@
         </div>
     </section>
 
-    <section id="services" class="py-24 px-6">
+    <section id="#services" class="py-24 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl">Our Core Strategy Pillars</h2>
@@ -116,7 +115,9 @@
                 <h3 class="text-2xl mb-8">5-Step Guide to Protecting Your Family’s Financial Future</h3>
                 
                 <form id="lead-magnet-form" class="space-y-4 max-w-md mx-auto">
-                    <input type="text" name="firstname" placeholder="Your Name" required class="w-full px-6 py-4 rounded-xl bg-gray-800 border-none outline-none focus:ring-2 focus:ring-lilac text-white">
+                    <input type="text" name="firstname" placeholder="First Name" required class="w-full px-6 py-4 rounded-xl bg-gray-800 border-none outline-none focus:ring-2 focus:ring-lilac text-white">
+                    <input type="text" name="lastname" placeholder="Last Name" required class="w-full px-6 py-4 rounded-xl bg-gray-800 border-none outline-none focus:ring-2 focus:ring-lilac text-white">
+                    <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-6 py-4 rounded-xl bg-gray-800 border-none outline-none focus:ring-2 focus:ring-lilac text-white">
                     <input type="email" name="email" placeholder="Email Address" required class="w-full px-6 py-4 rounded-xl bg-gray-800 border-none outline-none focus:ring-2 focus:ring-lilac text-white">
                     <button type="submit" class="w-full bg-lilac text-white py-4 rounded-xl font-bold shadow-lg hover:opacity-90 transition">Get My Free PDF</button>
                 </form>
@@ -132,7 +133,7 @@
             <img src="img/logo.jpeg" alt="WealthCare" class="h-24 w-auto mx-auto mb-4 opacity-90">
             <h2 class="text-4xl">Ready to secure your legacy?</h2>
             <p class="text-gray-500">Book your complimentary 30-minute Strategy Call today.</p>
-            <a href="https://calendly.com/app/scheduling/meeting_types/user/me#" target="_blank" class="inline-block bg-lilac text-white px-12 py-5 rounded-full font-bold text-lg shadow-2xl hover:-translate-y-1 transition-all">Book Your Free Call</a>
+            <a href="https://calendly.com/wealthcarewithannemarie/30min" target="_blank" class="inline-block bg-lilac text-white px-12 py-5 rounded-full font-bold text-lg shadow-2xl hover:-translate-y-1 transition-all">Book Your Free Call</a>
             <div class="pt-16 text-xs text-gray-400 uppercase tracking-widest border-t border-gray-200">
                 WealthCare with Annemarie &copy; 2026 | Financial Education & Protection
             </div>
@@ -140,20 +141,19 @@
     </footer>
 
     <script>
-        document.getElementById('lead-magnet-form').addEventListener('submit', function(e) {
-            e.preventDefault();
+    document.getElementById('lead-magnet-form').addEventListener('submit', function(e) {
+        e.preventDefault();
 
-            // Replace with your actual Podia PDF Link
-            const podiaLink = "https://wealthcarewithannemarie.podia.com/download";
+        // Updated with your Google Drive Link
+        const driveLink = "https://drive.google.com/file/d/1k8zxdr0PeuSoE4H0q-uSOSFJas5NhjKK/view?usp=sharing";
 
-            // Open PDF in new tab
-            window.open(podiaLink, '_blank');
+        // Open Drive link in new tab
+        window.open(driveLink, '_blank');
 
-            // Show success message and hide form
-            this.classList.add('hidden');
-            document.getElementById('form-success').classList.remove('hidden');
-        });
-    </script>
-
+        // Show success message and hide form
+        this.classList.add('hidden');
+        document.getElementById('form-success').classList.remove('hidden');
+    });
+</script>
 </body>
 </html>
